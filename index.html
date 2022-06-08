@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="rps.js"></script> 
+    <title>RPS in Console!</title>
+</head>
+<body>
+    <p>welcome to Rock Paper Scissors open console to play </p>
+    <p> assign variables:
+        let rock = "rock" let paper = "paper" let scissors = "scissors" 
+        let playerSelection = prompt('Choose Rock, Paper or Scissors!')
+        let computerSelectionOptions = [rock, paper, scissors]
+        let player_score = 0;
+        let computer_score = 0;
+        
+    </p>
+    <p>Computer selects random variable of the three (Rock Paper Scissors) using using array ?
+        -  function computerSelection() {
+                    computerSelection = computerSelectionOptions[Math.floor(Math.random() * computerSelectionOptions.length)];
+                    return computerSelection;
+        }
+        let computerSelection = computerPlay
+    </p>
+    <p>player selection .tolowercase and make it a parameter in a function that plays a single round of RPS along with computer selection. </p>
+    <p> function should include message announcing winner of that round and score versus computer
+        - single round including parameters playerSelection and computerSelection
+        -computerSelection = computerPlay
+        function playRound(playerSelection, computerSelection) {
+            if (playerSelection.toLowerCase == 'rock' && computerPlay == 'rock') {
+                return 'it is a draw!'; 
+            } else if (playerSelection.toLowerCase == 'rock' && computerPlay == 'paper') {
+                return 'sorry you lost!'; or computer_score++
+            } else if (playerSelection.toLowerCase == 'rock' && computerPlay == 'scissors') {
+                return 'Congratulations you won!'; or player_score++
+            } else if (playerSelection.toLowerCase == 'paper' && computerPlay == 'rock') {
+                return 'Congratulations you won!'; or player_score++
+            } else if (playerSelection.toLowerCase == 'paper' && computerPlay == 'paper') {
+                return 'it is a draw!';
+            } else if (playerSelection.toLowerCase == 'paper' && computerPlay == 'scissors') {
+                return 'sorry you lost!'; computer_score++
+            } else if (playerSelection.toLowerCase == 'scissors' && computerPlay == 'rock') {
+                return 'sorry you lost!'; computer_score++
+            } else if (playerSelection.toLowerCase == 'scissors' && computerPlay == 'paper') {
+                return 'Congratulations you won!'; or player_score++
+            } else if (playerSelection.toLowerCase == 'scissors' && computerPlay == 'scissors') {
+                return 'it is a draw!';
+            }
+             
+
+        }
+    </p>
+    <p>play again best of 3 message and score of winner or loser displayed
+        for (let i = 0; i < 5; i++) {
+            let playerSelection = prompt('Choose Rock, Paper or Scissors!')
+            computerselection()
+            playround()
+            if (playround() == "it is a draw!") {
+                return 'x + 0 = y + 0'
+            } else if (playround() == "congratulations ou won!") {
+                return x
+            }
+            maybe return score instead of string concat? figure out game score and loop 
+         }
+    </p>
+</body>
+</html>
